@@ -21,7 +21,6 @@ class ClientsController < ApplicationController
 
   def new
     @client = Client.new
-    @client.products.build
   end
 
 end
