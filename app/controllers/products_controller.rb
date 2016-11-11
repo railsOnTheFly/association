@@ -1,30 +1,35 @@
 class ProductsController < ApplicationController
-    def index
-    end
+  # GET /products
+  # GET /products.json
+  def index
+  end
 
-    def show
-        @params = params
-        @print = params[:print]
-        @action = params[:action]
-    end
+  # GET /products/1
+  # GET /products/1.json
+  def show
+    @params = params
+    @print = params[:print]
+    @action = params[:action]
+  end
 
-    def new
-        @products = Product.new
-    end
+  # GET /products/new
+  def new
+    @products = Product.new
+  end
 
-    def create
-        puts 'I am passing to here'
-        if 1 == 1
-            puts "some shit"
-            #create!
-        else
-            render :new
-      end
-    end
+  # POST /products
+  # POST /products.json
+  def create
+  end
 
-    def update
-    end
+  # PATCH/PUT /products/1
+  # PATCH/PUT /products/1.json
+  def update
+  end
 
-    def destroy
-    end
+  # DELETE /products/1
+  # DELETE /products/1.json
+  def destroy
+  end
+
 end
