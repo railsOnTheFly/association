@@ -5,7 +5,6 @@ class CreateRota < ActiveRecord::Migration
       t.string :destino
       t.string :kilometragem
       t.references :mapa, index: true
-
       t.timestamps
     end
   end

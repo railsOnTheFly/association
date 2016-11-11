@@ -4,7 +4,6 @@ class CreateMapas < ActiveRecord::Migration
       t.string :origem
       t.string :destino
       t.string :eficiencia
-
       t.timestamps
     end
   end

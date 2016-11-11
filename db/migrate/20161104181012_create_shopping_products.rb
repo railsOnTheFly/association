@@ -5,7 +5,6 @@ class CreateShoppingProducts < ActiveRecord::Migration
       t.text :description
       t.string :photo_path
       t.integer :price
-
       t.timestamps
     end
   end
