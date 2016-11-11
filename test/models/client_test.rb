@@ -1,7 +1,13 @@
 require 'test_helper'
 
 class ClientTest < ActiveSupport::TestCase
-  # test "the truth" do
-  #   assert true
-  # end
+   test "should save just with name" do
+     a = Client.new
+     assert_not a.save
+   end
+
+   test "client has many orders" do
+     client = Client.new
+     assert client.orders
+   end
 end
