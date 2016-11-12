@@ -10,4 +10,8 @@ class ClientTest < ActiveSupport::TestCase
      client = Client.new
      assert client.orders
    end
+
+   test "client has many address" do
+     
+   end
 end
