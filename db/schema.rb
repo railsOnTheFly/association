@@ -25,6 +25,7 @@ ActiveRecord::Schema.define(version: 20161111222354) do
 
   create_table "clients", force: true do |t|
     t.string   "name"
+    t.integer  "user_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

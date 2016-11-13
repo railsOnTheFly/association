@@ -1,7 +1,9 @@
 require 'test_helper'
 
 class UserTest < ActiveSupport::TestCase
-  # test "the truth" do
-  #   assert true
-  # end
+   test "user has one client" do
+     user = User.new
+     user.client = Client.new
+     assert user.client
+   end
 end
