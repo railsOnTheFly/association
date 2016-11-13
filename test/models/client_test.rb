@@ -12,6 +12,7 @@ class ClientTest < ActiveSupport::TestCase
    end
 
    test "client has many address" do
-     
+     client = Client.new
+     assert client.address
    end
 end
