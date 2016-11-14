@@ -17,8 +17,11 @@ ActiveRecord::Schema.define(version: 20161111222354) do
   enable_extension "plpgsql"
 
   create_table "addresses", force: true do |t|
+    t.string   "area"
+    t.string   "postalcode"
     t.string   "city"
-    t.integer  "user_id"
+    t.string   "country"
+    t.integer  "client_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
