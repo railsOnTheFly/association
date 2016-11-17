@@ -7,13 +7,9 @@ class ClientsController < ApplicationController
 
   def create
     @client = Client.new
-
     if @client.save
       redirect_to @user # /users/#{@user.id}
-    else
-      render new
     end
-
   end
 
   def update
